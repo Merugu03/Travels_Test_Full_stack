@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tax Invoice</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row r1">
+      <div class="col main_title r1">
+        <h1 class="heading"><strong>Om Sri Raja Rajeshwara Goods Transport</strong></h1>
+      </div>
+    </div>
+    <div class="row r2">
+      <div class="col-2 r2 left">
+        <img class="left" src="images/shivaandparvathi.jpg" alt="God images">
+      </div>
+      <div class="col-8 main_title r2 middle">
+        <h2>TRANSPORT CONTRACTORS</h2>
+        <p>(Regd. No 35/2012)</p>
+        <p>Pan No. AACF09656N,<b> GSTIN No. 36AACF09656N1ZI</b></p>
+        <p>Godavarikhani- 505209 Dist. Peddapalli(T.S)</p>
+        <p><b>E-mail: rajender.jakkula99@gmail.com</b></p>
+      </div>
+      <div class="col-2 r2 right">
+        <img class="right" src="images/venkatesh.png" alt="God images">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col main_title">
+        <h1><strong> <span style="color:#BF3325">TAX INVOICE</span></strong></h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-8">
+        <div class="row con">
+          <p><span style="color:#BF3325">CONSIGNOR:</span> <span style="color:#0D0D0D"> <%=consignor%></span></p>
+        </div>
+        <div class="row con">
+          <p><span style="color:#BF3325">CONSIGNIEE:</span><span style="color:#0D0D0D"> <%=consigniee%></span>  </p>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="row">
+          <p>Invoice No: <span style="color:#0D0D0D"> <%=invoice_no%></span> </p>
+          <p>Date:    <span style="color:#0D0D0D"> <%=date%></span></p>
+        </div>
+        <div class="row">
+          <p>L.R.No: <span style="color:#0D0D0D"> <%=lrno%></span> </p>
+          <p>Date:   <span style="color:#0D0D0D"> <%=date%></span></p>
+        </div>
+        <div class="row">
+          <p>QTN No: <span style="color:#0D0D0D"> <%=otnno%></span> </p>
+          <p>Date:   <span style="color:#0D0D0D"> <%=date%></span></p>
+        </div>
+      </div>
+    </div>
+    <!-- s.no, description of goods , hsn?sa, qty, unit price, amount 114 -->
+    <div class="row lsit">
+      <div class="col-1 borders sno">S.No.</div>
+      <div class="col-4 borders sno" style="width: ">DESCRIPTION OF GOODS</div>
+      <div class="col-2 borders sno" style="width: ">HSN/SAC No.</div>
+      <div class="col-1 borders sno" style="width: ">QTY</div>
+      <div class="col-2 borders sno" style="width: ">UNIT PRICE(RS)</div>
+      <div class="col-2 borders sno" style="width: ">AMOUNT(RS)</div>
+    </div>
+    <div class="row larg ">
+      <div class="col-1 borders">1</div>
+      <div class="col-4 borders">invoice No: <br/><span style="color:#0D0D0D">  <%=desc%></span></div>
+      <div class="col-2 borders"><span style="color:#0D0D0D">  <%=hsn%></span></div>
+      <div class="col-1 borders"><span style="color:#0D0D0D">  <%=qty%></span></div>
+      <div class="col-2 borders"><span style="color:#0D0D0D">  <%=unit%></span></div>
+      <div class="col-2 borders"><span style="color:#0D0D0D">  <%=amount%>.00</span></div>
+    </div>
+    <div class="row">
+      <div class="col-8">
+        <p style="color:#BF3325"><strong>Inwords:</strong><br><span style="color:#0D0D0D"> <%=inwords%></span></p>
+      </div>
+      <div class="col-4">
+        <div class="row">
+          <div class="col-6">TAXABLE VALUE</div>
+          <div class="col-6"><span style="color:#0D0D0D">  <%=amount%>.00</span></div>
+        </div>
+        <div class="row">
+          <div class="col-6">ADD CGST@</div>
+          <div class="col-6"> - </div>
+        </div>
+        <div class="row">
+          <div class="col-6">ADD SGST@</div>
+          <div class="col-6"> - </div>
+        </div>
+        <div class="row">
+          <div class="col-6">TOTAL INVOICE VALUE </div>
+          <div class="col-6"><span style="color:#0D0D0D">  <%=amount%>.00</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <p style="color:#BF3325"><b>Bank details</b></p>
+        <p>Name: Om Sri Raja Rajeshwara Goods Transport</p>
+        <p>ICICI A/C 068205001536</p>
+        <p>IFSC Code : ICIC0000682</p>
+        <p>Godavarikhani</p>
+      </div>
+      <div class="col-6">
+        <p style="text-align: center"><b>Om Sri Raja Rajeshwara Goods Transport</b></p>
+        <p class="pro">Proprietor (J.Rajender)</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
